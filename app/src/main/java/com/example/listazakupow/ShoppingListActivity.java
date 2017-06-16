@@ -45,7 +45,7 @@ public class ShoppingListActivity extends AppCompatActivity {
         listView = (ListView) findViewById(R.id.list_view);
         listView.setEmptyView(findViewById(R.id.empty));
 
-        adapter = new SimpleCursorAdapter(this, R.layout.activity_view_record, cursor, from, to, 0);
+        adapter = new SimpleCursorAdapter(this, R.layout.activity_view_item, cursor, from, to, 0);
         adapter.notifyDataSetChanged();
 
         listView.setAdapter(adapter);
